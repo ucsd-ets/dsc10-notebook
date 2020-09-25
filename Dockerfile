@@ -1,4 +1,4 @@
-FROM ucsdets/datascience-notebook:2019.4-stable
+FROM ucsdets/datascience-notebook:2020.2-stable
 RUN pip install coverage==4.5.3
 RUN pip install 'pandas>=0.24'
 RUN pip install otter-grader
