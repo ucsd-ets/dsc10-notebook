@@ -1,6 +1,8 @@
 ARG BASE_CONTAINER=ucsdets/datascience-notebook:2021.1-stable
 FROM $BASE_CONTAINER
 
+USER root
+
 RUN pip install coverage==5.5
 RUN pip install 'pandas>=0.24'
 RUN pip install otter-grader
