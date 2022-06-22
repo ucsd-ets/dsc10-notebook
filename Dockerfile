@@ -4,7 +4,7 @@ FROM $BASE_CONTAINER
 USER root
 
 RUN pip install coverage==5.5
-RUN pip install 'pandas>=0.24' babypandas==0.1.6 pandas-tutor==2.0.0
+RUN pip install 'pandas>=0.24' pandas-tutor==2.0.0
 RUN pip install otter-grader
 RUN pip install git+https://github.com/eldridgejm/babypandas@7f2e26f6cdf6ac77c918c9dd7e81e66fc30fb3bd
 
