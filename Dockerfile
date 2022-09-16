@@ -1,4 +1,4 @@
-ARG BASE_CONTAINER=ucsdets/datascience-notebook:2022.2-stable
+ARG BASE_CONTAINER=ucsdets/datascience-notebook:2022.3-stable
 FROM $BASE_CONTAINER
 
 USER root
