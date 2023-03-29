@@ -1,6 +1,6 @@
 # JupyterHub container for DSC 10
 
-Contains babypandas
+Please exercise caution, as it contains babypandas.
 
 ## Creating a new release
 
