@@ -19,9 +19,9 @@ You can also create a release using the git CLI.
 
 Re-releasing is the same as making a release, except that we need to delete the existing release.
 
-Open the [Releases](../../releases) page, click the Tags tab, and delete the tag.
+Open the [Releases](../../releases) page, click the Releases tab, and delete the release.
 
-Go back to the Releases page, click the Releases tab, and delete the release.
+Open the [Releases](../../releases) page, click the Tags tab, and delete the tag.
 
 And for CLI users
 
@@ -29,4 +29,3 @@ And for CLI users
     git push ---delete origin sp23
 
 Now that the tag and release are gone, follow the "How to create a release" instructions.
-
