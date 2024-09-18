@@ -1,6 +1,5 @@
 ARG BASE_CONTAINER=ghcr.io/ucsd-ets/datascience-notebook:2024.4-stable
 FROM $BASE_CONTAINER
-
 USER root
 
 # Currently, pandas 1.5.3 breaks nbgrader on JLab4 due to its reliance on an older version of
