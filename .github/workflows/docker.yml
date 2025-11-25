@@ -1,39 +1,39 @@
 name: Build notebook
 on:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: "0 8 * * *" # every day at 8am UTC (12am PST)
   push:
- 
+
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
- 
+
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
- 
+
     steps:
       - name: Checkout notebook
-        uses: actions/checkout@v3
- 
+        uses: actions/checkout@v6
+
       - name: Log in to registry
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
- 
+
       - name: Generate tags and labels
         id: meta
-        uses: docker/metadata-action@v4
+        uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
- 
+
       - name: Build and push notebook
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v6
         with:
           context: .
           push: true
