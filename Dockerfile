@@ -1,7 +1,7 @@
-ARG BASE_CONTAINER=ghcr.io/ucsd-ets/datascience-notebook:2025.2-stable
+ARG BASE_CONTAINER=ghcr.io/ucsd-ets/datascience-notebook:2025.3-datascience-uv
 FROM $BASE_CONTAINER
 
-RUN pip install \
+RUN uv pip install --system \
   babypandas==1.0.0 \
   pandas-tutor==2.1.0.dev1 \
   otter-grader==3.3.0 \
