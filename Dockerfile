@@ -5,4 +5,4 @@ RUN uv pip install --system \
   babypandas==1.0.0 \
   pandas-tutor==2.1.0.dev1 \
   otter-grader==3.3.0 \
-  git+https://github.com/dstl-lab/dsc10-tutor-jlab.git@e3f9e4b656b4471528c6df136333a4fb56eef80b
+  git+https://github.com/dstl-lab/dsc10-tutor-jlab.git@fe5368749328086555062b78164bd701e5e833f9
