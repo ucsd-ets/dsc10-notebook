@@ -31,6 +31,12 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          # hard-code a wi26 tag for now to avoid having to keep re-tagging
+          # release on github
+          tags: |
+            type=schedule,pattern=nightly
+            type=ref,event=branch
+            type=raw,value=wi26
 
       - name: Build and push notebook
         uses: docker/build-push-action@v6
