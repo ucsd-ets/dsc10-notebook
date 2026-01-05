@@ -2,6 +2,7 @@ ARG BASE_CONTAINER=ghcr.io/ucsd-ets/datascience-notebook:2025.3-datascience-uv
 FROM $BASE_CONTAINER
 
 RUN uv pip install --system \
+  rise==5.7.1 \
   babypandas==1.0.0 \
   plotly==6.5.0 \
   pandas-tutor==2.1.0.dev1 \
