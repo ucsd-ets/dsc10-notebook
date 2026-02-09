@@ -8,8 +8,8 @@ help:
 push: ## pushes changes
 	git add -A
 	git commit -m "Update $(TODAY)" --allow-empty
-	git pull origin master
-	git push origin master
+	git pull origin main
+	git push origin main
 
 .PHONY:
 build: ## retriggers the GitHub workflow to build the notebook
