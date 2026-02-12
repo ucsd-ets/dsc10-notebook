@@ -1,6 +1,9 @@
 ARG BASE_CONTAINER=ghcr.io/ucsd-ets/datascience-notebook:2025.3-datascience-uv
 FROM $BASE_CONTAINER
 
+ARG GEMINI_API_KEY
+ENV GEMINI_API_KEY=$GEMINI_API_KEY
+
 RUN uv pip install --system \
   rise==5.7.1 \
   babypandas==1.0.0 \
