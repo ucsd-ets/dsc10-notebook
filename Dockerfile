@@ -11,4 +11,4 @@ RUN uv pip install --system \
   pandas-tutor==2.1.0.dev1 \
   otter-grader==6.1.6 \
   wordcloud==1.9.4 \
-  git+https://github.com/dstl-lab/dsc10-tutor-jlab.git
+  git+https://github.com/dstl-lab/dsc10-tutor-jlab.git@29d6f0a08c8d5b9355ebe4052e4b171b748a17d0
