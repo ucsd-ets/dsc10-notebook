@@ -10,4 +10,5 @@ RUN uv pip install --system \
   plotly==6.5.0 \
   pandas-tutor==2.1.0.dev1 \
   otter-grader==6.1.6 \
+  wordcloud==1.9.4 \
   git+https://github.com/dstl-lab/dsc10-tutor-jlab.git
