@@ -1,7 +1,5 @@
 name: Build notebook
 on:
-  schedule:
-    - cron: "0 8 * * *" # every day at 8am UTC (12am PST)
   push:
   workflow_dispatch:
 
@@ -33,7 +31,6 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
-            type=schedule,pattern=nightly
             type=ref,event=branch
             type=raw,value=latest
 
